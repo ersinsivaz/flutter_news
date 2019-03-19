@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter_news/src/models/item_model.dart';
 import 'package:flutter_news/src/resources/repository.dart';
 import 'package:rxdart/rxdart.dart';
@@ -35,7 +37,7 @@ class StoriesBloc {
     return ScanStreamTransformer(
       (Map<int,Future<ItemModel>> cache,int id,index){
         cache[id] = _repository.fetchItem(id);
-        print(index);
+        //print(index);
         return cache;
       },
     <int, Future<ItemModel>>  {},

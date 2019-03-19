@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'package:flutter_news/src/models/item_model.dart';
 import 'package:flutter_news/src/resources/repository.dart';
